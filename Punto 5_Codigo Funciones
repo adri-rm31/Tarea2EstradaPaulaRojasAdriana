@@ -1,0 +1,28 @@
+#CODIGO FUNCIONES
+
+def calc_suma(a, b):
+    return a+b
+
+
+def calc_resta(a, b):
+    return a-b
+
+
+def calc_mult(a, b):
+    return a*b
+
+
+def main_principal(a, b):
+    try:
+        a = int(a)
+        b = int(b)
+        if(a > b):
+            print("Suma, Resta, Multiplicacion = ")
+            return calc_suma(a, b), calc_resta(a, b), calc_mult(a, b)
+        else:
+            print("A es menor que B")
+            return -1
+
+    except ValueError:
+        print("No es interger")
+        return -2
