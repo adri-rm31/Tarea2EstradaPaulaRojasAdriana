@@ -1,0 +1,33 @@
+#CODIGO TESTING
+
+import prueba
+
+
+def test_main_exito():
+    a = 50
+    b = 10
+    print("......")
+    dato = prueba.main_principal(a, b)
+    print(dato)
+    assert dato == (60, 40, 500)
+    print("----------------------------------------------------")
+
+
+def test_main_a_menor():
+    a = 5
+    b = 10
+    print("......")
+    dato = prueba.main_principal(a, b)
+    print(dato)
+    assert dato == -1
+    print("----------------------------------------------------")
+
+
+def test_main_valor_literal():
+    a = "casa"
+    b = 9
+    print("......")
+    dato = prueba.main_principal(a, b)
+    print(dato)
+    assert dato == -2
+    print("----------------------------------------------------")
